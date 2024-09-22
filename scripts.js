@@ -47,5 +47,9 @@ console.log(names.map((name) => name.length));
 //#5  alphabetically sort province
 console.log([...provinces].sort());
 
-//6 When the cape is removed this code will log out and filter provinces // needed help with this
+//#6 When the cape is removed this code will log out and filter provinces // needed help with this
 console.log(provinces.filter((province) => !province.includes("Cape")).length);
+
+//#7
+//  will provide a boolean array for names that have   'S'
+console.log(names.map((name) => name.includes("S")));
