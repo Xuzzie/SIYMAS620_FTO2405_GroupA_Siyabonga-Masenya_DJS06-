@@ -33,3 +33,8 @@ names.forEach((name) => console.log(name));
 provinces.forEach((province) => console.log(province));
 
 //#2 log each name with a province that matches
+names.forEach((name, index) => {
+  console.log(`${name} (${provinces[index]})`); // created a template literal so grouping is paired
+});
+
+//#3 make the provinces upercase
