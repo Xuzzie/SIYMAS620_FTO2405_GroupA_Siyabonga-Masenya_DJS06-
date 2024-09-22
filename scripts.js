@@ -38,3 +38,14 @@ names.forEach((name, index) => {
 });
 
 //#3 make the provinces upercase
+const provincesUpercase = provinces.map((province) => province.toUpperCase());
+console.log(provincesUpercase);
+
+//#4  log  name of lengths in
+console.log(names.map((name) => name.length));
+
+//#5  alphabetically sort province
+console.log([...provinces].sort());
+
+//6 When the cape is removed this code will log out and filter provinces // needed help with this
+console.log(provinces.filter((province) => !province.includes("Cape")).length);
