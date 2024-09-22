@@ -53,3 +53,11 @@ console.log(provinces.filter((province) => !province.includes("Cape")).length);
 //#7
 //  will provide a boolean array for names that have   'S'
 console.log(names.map((name) => name.includes("S")));
+
+//#8 This confused me
+console.log(
+  names.reduce((obj, name, index) => {
+    obj[name] = provinces[index];
+    return obj;
+  }, {})
+);
